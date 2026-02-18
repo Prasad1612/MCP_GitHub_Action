@@ -4,10 +4,6 @@ on:
   repository_dispatch:
     types: [telegram_message]
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.client_payload.chat_id || github.run_id }}
-  cancel-in-progress: true
-
 jobs:
   respond:
     runs-on: ubuntu-latest
