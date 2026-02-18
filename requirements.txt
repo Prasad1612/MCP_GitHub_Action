@@ -1,0 +1,7 @@
+mcp
+fastapi
+uvicorn
+pandas
+requests
+google-genai
+NseKit
