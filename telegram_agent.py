@@ -53,7 +53,7 @@ def main():
 
         # Call Gemini with automatic tool calling
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-2.0-flash',
             contents=message,
             config=types.GenerateContentConfig(
                 tools=tools_functions,
